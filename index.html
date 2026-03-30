@@ -84,27 +84,13 @@
         .btn-3d:active { transform: scale(0.96); }
         .btn-3d i { color: var(--maroon-solid); }
 
-        .btn-maroon-3d {
-            background: linear-gradient(145deg, #a00000, #700000);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 6px 6px 15px rgba(128, 0, 0, 0.2), inset -3px -3px 6px rgba(0, 0, 0, 0.2);
-            color: white !important;
-            border-radius: 12px;
-            font-weight: 600;
-            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-            display: flex; align-items: center;
-            text-decoration: none;
-        }
-        .btn-maroon-3d:active { transform: scale(0.96); }
-        .btn-maroon-3d i { color: white; }
-
         .page-container {
             width: 100%; height: 100%;
             display: flex; justify-content: center; align-items: flex-start;
         }
 
         .content-scroll { 
-            overflow-y: auto; flex: 1; padding: 30px 20px; width: 100%; max-width: 380px; height: 100%;
+            overflow-y: auto; flex: 1; padding: 30px 20px; width: 100%; max-width: 400px; height: 100%;
             -webkit-overflow-scrolling: touch; scrollbar-width: none;
         }
         .content-scroll::-webkit-scrollbar { display: none; }
@@ -139,6 +125,12 @@
             animation: shine 3.5s linear infinite; display: inline-block;
         }
         @keyframes shine { to { background-position: 200% center; } }
+
+        /* Custom style untuk isi tombol member */
+        .member-btn { py-2.5 px-4 flex items-center gap-3.5 w-full }
+        .member-text-wrap { display: flex; flex-direction: column; text-align: left; }
+        .member-name { font-size: 10px; font-weight: 700; text-transform: uppercase; line-height: 1.2; }
+        .member-role { font-size: 7px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.6; margin-top: 2px; }
     </style>
 </head>
 <body>
@@ -176,7 +168,7 @@
     <div class="page-container">
         <div class="content-scroll pb-16">
             
-            <!-- Header Judul (SUDAH DIROMBAK MENJADI LEBIH BESAR DAN CENTER) -->
+            <!-- Header Judul -->
             <div class="glass-3d py-10 px-4 mb-6 flex flex-col items-center justify-center text-center">
                 <h1 class="text-[22px] font-extrabold tracking-tight mb-2 uppercase leading-tight shiny-text w-full">
                     DIREKTORI ID DIGITAL
@@ -190,11 +182,19 @@
             <div class="glass-clean p-4 mb-4">
                 <h3 class="text-[10px] font-bold uppercase tracking-widest mb-3 border-l-2 border-[#800000] pl-2">1. BPH HMPS</h3>
                 <div class="flex flex-col gap-2.5">
-                    <a href="#" target="_blank" class="btn-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4">
-                        <i class="fas fa-user-tie mr-3 text-lg opacity-70"></i> Nama Ketua BPH
+                    <a href="https://sempurnain.github.io/hasna-rahmania-firdausy-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-user-tie text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Hasna Rahmania Firdausy</span>
+                            <span class="member-role">Wakil Sekretaris Himpunan</span>
+                        </div>
                     </a>
-                    <a href="#" target="_blank" class="btn-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4">
-                        <i class="fas fa-user-tie mr-3 text-lg opacity-70"></i> Nama Wakil
+                    <a href="https://sempurnain.github.io/himmatul-rofiah-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-user-tie text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Himmatul Rofiah</span>
+                            <span class="member-role">Bendahara Umum Himpunan</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -203,11 +203,33 @@
             <div class="glass-clean p-4 mb-4">
                 <h3 class="text-[10px] font-bold uppercase tracking-widest mb-3 border-l-2 border-[#800000] pl-2">2. Divisi Networking</h3>
                 <div class="flex flex-col gap-2.5">
-                    <a href="#" target="_blank" class="btn-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4">
-                        <i class="fas fa-network-wired mr-3 text-lg opacity-70"></i> Nama Anggota Net
+                    <a href="https://sempurnain.github.io/mochamad-tegar-agus-prasetyo-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-network-wired text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Mochamad Tegar Agus Prasetyo</span>
+                            <span class="member-role">Anggota Divisi Networking</span>
+                        </div>
                     </a>
-                    <a href="#" target="_blank" class="btn-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4">
-                        <i class="fas fa-network-wired mr-3 text-lg opacity-70"></i> Nama Anggota Net
+                    <a href="https://sempurnain.github.io/aufaa-piluvka-artika-adi-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-network-wired text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Aufaa Piluvka Artika Adi</span>
+                            <span class="member-role">Anggota Divisi Networking</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/nadyne-dwi-kurniasari-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-network-wired text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Nadyne Dwi Kurniasari</span>
+                            <span class="member-role">Anggota Divisi Networking</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/mohammad-alfin-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-network-wired text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Mohammad Alfin</span>
+                            <span class="member-role">Anggota Divisi Networking</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -216,8 +238,33 @@
             <div class="glass-clean p-4 mb-4">
                 <h3 class="text-[10px] font-bold uppercase tracking-widest mb-3 border-l-2 border-[#800000] pl-2">3. Divisi Pendidikan</h3>
                 <div class="flex flex-col gap-2.5">
-                    <a href="#" target="_blank" class="btn-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4">
-                        <i class="fas fa-book-reader mr-3 text-lg opacity-70"></i> Nama Anggota Pend
+                    <a href="https://sempurnain.github.io/silvia-rahma-mufida-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-book-reader text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Silvia Rahma Mufida</span>
+                            <span class="member-role">Anggota Divisi Pendidikan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/achmad-jeffry-al-ghifari-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-book-reader text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Achmad Jeffry Al-Ghifari</span>
+                            <span class="member-role">Anggota Divisi Pendidikan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/vivi-mewat-tiofani-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-book-reader text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Vivi Mewat Tiofani</span>
+                            <span class="member-role">Anggota Divisi Pendidikan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/regina-faisa-azzahra-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-book-reader text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Regina Faisa Azzahra</span>
+                            <span class="member-role">Anggota Divisi Pendidikan</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -226,8 +273,26 @@
             <div class="glass-clean p-4 mb-4">
                 <h3 class="text-[10px] font-bold uppercase tracking-widest mb-3 border-l-2 border-[#800000] pl-2">4. Divisi Keagamaan</h3>
                 <div class="flex flex-col gap-2.5">
-                    <a href="#" target="_blank" class="btn-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4">
-                        <i class="fas fa-praying-hands mr-3 text-lg opacity-70"></i> Nama Anggota Agama
+                    <a href="https://sempurnain.github.io/sanindya-fairus-khoirunisa-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-praying-hands text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Sanindya Fairus Khoirunisa</span>
+                            <span class="member-role">Anggota Divisi Keagamaan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/musthofa-id-member-hpms-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-praying-hands text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Musthofa</span>
+                            <span class="member-role">Anggota Divisi Keagamaan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/faiq-cahyaningtyas-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-praying-hands text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Faiq Cahyaningtyas</span>
+                            <span class="member-role">Anggota Divisi Keagamaan</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -236,14 +301,12 @@
             <div class="glass-clean p-4 mb-4">
                 <h3 class="text-[10px] font-bold uppercase tracking-widest mb-3 border-l-2 border-[#800000] pl-2">5. Divisi Multimedia</h3>
                 <div class="flex flex-col gap-2.5">
-                    
-                    <!-- LINK KHUSUS M. AWALUDDIN KAMIL -->
-                    <a href="https://sempurnain.github.io/m.-awaluddin-kamil-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-maroon-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4 shadow-lg">
-                        <i class="fas fa-camera-retro mr-3 text-lg"></i> M. AWALUDDIN KAMIL
-                    </a>
-                    
-                    <a href="#" target="_blank" class="btn-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4">
-                        <i class="fas fa-camera-retro mr-3 text-lg opacity-70"></i> Anggota Multi Lain
+                    <a href="https://sempurnain.github.io/m.-awaluddin-kamil-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-camera-retro text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">M. Awaluddin Kamil</span>
+                            <span class="member-role">Anggota Divisi Multimedia</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -252,8 +315,61 @@
             <div class="glass-clean p-4 mb-4">
                 <h3 class="text-[10px] font-bold uppercase tracking-widest mb-3 border-l-2 border-[#800000] pl-2">6. Divisi Kewirausahaan</h3>
                 <div class="flex flex-col gap-2.5">
-                    <a href="#" target="_blank" class="btn-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4">
-                        <i class="fas fa-store mr-3 text-lg opacity-70"></i> Nama Anggota Wira
+                    <a href="https://sempurnain.github.io/ana-faizatul-masruroh-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-store text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Ana Faizatul Masruroh</span>
+                            <span class="member-role">Co Divisi Kewirausahaan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/fatimatuz-zahro-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-store text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Fatimatuz Zahro</span>
+                            <span class="member-role">Anggota Divisi Kewirausahaan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/dzihni-fakhriyyah-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-store text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Dzihni Fakhriyyah</span>
+                            <span class="member-role">Anggota Divisi Kewirausahaan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/mohammad-doni-abdi-falakhi-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-store text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Mohammad Doni Abdi Falakhi</span>
+                            <span class="member-role">Anggota Divisi Kewirausahaan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/wifda-tahtal-fina-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-store text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Wifda Tahtal Fina</span>
+                            <span class="member-role">Anggota Divisi Kewirausahaan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/wardah-labibatul-aufa-hadi-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-store text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Wardah Labibatul Aufa Hadi</span>
+                            <span class="member-role">Anggota Divisi Kewirausahaan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/muhammad-daffa-mustika-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-store text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Muhammad Daffa Mustika</span>
+                            <span class="member-role">Anggota Divisi Kewirausahaan</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/dwi-cahya-firdausi-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-store text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Dwi Cahya Firdausi</span>
+                            <span class="member-role">Anggota Divisi Kewirausahaan</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -262,8 +378,40 @@
             <div class="glass-clean p-4 mb-4">
                 <h3 class="text-[10px] font-bold uppercase tracking-widest mb-3 border-l-2 border-[#800000] pl-2">7. Divisi PSDM</h3>
                 <div class="flex flex-col gap-2.5">
-                    <a href="#" target="_blank" class="btn-3d h-11 text-[9.5px] font-bold uppercase justify-start px-4">
-                        <i class="fas fa-users-cog mr-3 text-lg opacity-70"></i> Nama Anggota PSDM
+                    <a href="https://sempurnain.github.io/anastia-galuh-dewista-m-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-users-cog text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Anastia Galuh Dewista M</span>
+                            <span class="member-role">Anggota Divisi PSDM</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/ahmad-falih-mudzakkir-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-users-cog text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Ahmad Falih Mudzakkir</span>
+                            <span class="member-role">Anggota Divisi PSDM</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/ainur-azilah-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-users-cog text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Ainur Azilah</span>
+                            <span class="member-role">Anggota</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/dihya-danish-dzulfiqhan-id-member-hmps-pgmi-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-users-cog text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Dihya Danish Dzulfiqhan</span>
+                            <span class="member-role">Anggota</span>
+                        </div>
+                    </a>
+                    <a href="https://sempurnain.github.io/aninda-vania-id-member-uin-malang/" target="_blank" class="btn-3d py-2.5 px-4 flex items-center gap-3">
+                        <i class="fas fa-users-cog text-lg w-5 text-center opacity-70"></i>
+                        <div class="member-text-wrap">
+                            <span class="member-name">Aninda Vania</span>
+                            <span class="member-role">Anggota</span>
+                        </div>
                     </a>
                 </div>
             </div>
